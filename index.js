@@ -8,6 +8,8 @@ var educationDiv = document.getElementById("education");
 var projectsDiv = document.getElementById("projects");
 var contactDiv = document.getElementById("contact");
 
+$("#navbar > a").click(updateOnScroll());
+
 updateOnScroll();
 
 function updateOnScroll() {

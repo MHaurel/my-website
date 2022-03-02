@@ -66,6 +66,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px 0px;
   }
 
   .hobbies-container {
@@ -111,17 +112,50 @@ body {
   .education-container > div {
     width: 100%;
     height: 100%;
+    padding: 5px 10px;
+  }
+
+  .education-container h2 {
+    font-weight: bold;
   }
 
   .diplomas-container {
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 1/2;
     place-self: center;
     background-color: bisque;
   }
 
+  .diplomas-container > * {
+    width: 100%;
+  }
+
+  .diplomas > div {
+    margin: 50px 5px;
+  }
+
+  .diplomas > div > div {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .internships > div {
+    margin: 50px 5px;
+  }
+
+  .internships > div > div {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .experience-container {
-    grid-column: 3/4;
+    grid-column: 3/5;
     grid-row: 1/2;
     place-self: center;
     background-color: aqua;
@@ -160,6 +194,24 @@ body {
     align-items: center;
   }
 
+  .projects * {
+    width: 100%;
+  }
+
+  .projects p {
+    font-size: 20px;
+  }
+
+  .projects a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .projects a:hover {
+    text-decoration: underline;
+  }
+
   .card {
     padding: 25px 10px;
     border-radius: 8px;
@@ -170,11 +222,21 @@ body {
     /* cursor: url('./resources/cursor/rocket.cur'), auto; Not working */
   }
 
+  /* .card:hover {
+    /* transform: scale(1.05); */ /*
+  } */
+
   .card > h2 {
     font-weight: bold;
   }
 
   .github-button-container {
     margin-top: 20px;
+  }
+
+  .github-button-container > a {
     text-decoration-line: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
