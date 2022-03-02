@@ -18,7 +18,7 @@
 <body>
 
     <div id="index" class="bg-white dark:bg-slate-100 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-        <div class="md:flex justify-self-center">
+        <div class="profile-container md:flex justify-self-center">
             <img class="w-48 h-48 rounded-full" src="./myself.png">
             <div class="pt-6 md:p-8 left ml-10">
                 <p class="text-5xl font-medium">
@@ -45,31 +45,99 @@
     </div>
 
     <div id="navbar">
-        <a href="#index" class="block py-2 pr-4 pl-3 text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">PROFILE</a></li>
-        <a href="#education" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">EDUCATION</a>
-        <a href="#projects" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PROJECTS</a>
-        <a href="#contact" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CONTACT</a>
+        <!-- block py-2 pr-4 pl-3 text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white -->
+        <a href="#index"aria-current="page">PROFILE</a></li>
+        <a href="#education">EDUCATION</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
     </div>
 
-    <div id="content">
-        My goal is to achieve some concrete world related problems thanks to AI solutions.
+    <div id="content" class="content-container">
+        <h2>My goal is to achieve some concrete world related problems thanks to AI solutions.</h2>
+        <div class="hobbies-container">
+            <h1>HOBBIES</h1>
+            <div class="astro">
+                <h2>Astronomy & Cosmology</h2>
+                <p>I have a deep interest about the universe and how all started.</p>
+                <p>"What are we ?" and "How are we ?" might be the most intriguous question I ever asked myself.</p>
+                <p>And this is by wondering this way that I am able to take an interest on some topics and solve problems.</p>
+            </div>
+            <div class="sport">
+                <h2>Sport</h2>
+                <p>I used to play Football & Badminton in club for 12 years.</p>
+                <p>This is a big part of my life and it trained me to be able to keep focusing even in hard times.</p>
+            </div>
+            <div class="trips">
+                <h2>Trips</h2>
+                <p>I love to take trips and use my languages skills to discover new places and cultures.</p>
+                <p>Usually shy, trips helped me open myslef to people and customs.</p>
+            </div>
+        </div>
     </div>
 
-    <div id="education">
+    <div id="education" class="education-container">
+        <div class="diplomas-container">
+            <h2>DIPLOMAS</h2>
+            <div>
+                <div class="diploma-bsc">
 
+                </div>
+
+                <div class="diploma-btec">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-container">
+            <h2>EXPERIENCE</h2>
+            <div>
+                <div class="internship-bsc">
+
+                </div>
+
+                <div class="internship-btec">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-container">
+            <h2>SKILLS</h2>
+        </div>
+
+        <div class="languages-container">
+            <h2>LANGUAGES</h2>
+        </div>
     </div>
 
-    <div id="projects">
+    <div id="projects" class="projects-container">
+        <br>
+        <div class="projects">
+            <div class="project-card card">
+                <h2>Machine Translation</h2>
+                <p>Creating a machine translation system using PyTorch, spaCy and transformers</p>
+                <a href="#">Discover it</a>
+            </div>
 
+            <div class="project-card card">
+                <h2>Machine Translation</h2>
+                <p>Creating a machine translation system using PyTorch, spaCy and transformers</p>
+                <a href="#">Discover it</a>
+            </div>
+        </div>
+
+        <p>Want to see other projects ? Click down below</p>
+        <div class="github-button-container">
+            <a href="https://github.com/MHaurel" target="_blank">GitHub profile page</a>
+        </div>
     </div>
 
-    <div id="contact">
+    <div id="contact" class="contact-container">
 
     </div>
 
     <div id="loren">
-        <h3>Sticky Navigation Example</h3>
-        <p>The navbar will stick to the top when you reach its scroll position.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
