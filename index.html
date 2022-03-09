@@ -19,17 +19,17 @@
 
     <div id="index" class="bg-white dark:bg-slate-100 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
         <div class="profile-container md:flex justify-self-center">
-            <img class="w-48 h-48 rounded-full" src="./myself.png">
+            <img class="w-48 h-48 rounded-full" src="./resources/img/myself.png">
             <div class="pt-6 md:p-8 left ml-10">
                 <p class="text-5xl font-medium">
                     Maxime HAUREL
                 </p>
                 <p class="text-3xl font-light">
-                    NLP Student at IDMC, Université de Lorraine
+                    AI Student at IDMC, Université de Lorraine
                 </p>
             </div>
             <div>
-                <a href="https://www.linkedin.com/in/maxime-haurel-326133182/" target="_blank"><img class="w-16 h-16" src="./linkedin-logo.png" alt="My LinkedIn profile page"></a>
+                <a href="https://www.linkedin.com/in/maxime-haurel-326133182/" target="_blank"><img class="w-16 h-16" src="./resources/img/linkedin-logo.png" alt="My LinkedIn profile page"></a>
             </div>
         </div>
 
@@ -76,6 +76,9 @@
     </div>
 
     <div id="education" class="education-container">
+        <div class="first-row">
+
+        </div>
         <div class="diplomas-container">
             <h2>DIPLOMAS</h2>
             <div class="diplomas">
@@ -98,6 +101,8 @@
             </div>
         </div>
 
+        <!-- <div class="vl"></div> -->
+
         <div class="experience-container">
             <h2>EXPERIENCE</h2>
             <div class="internships">
@@ -112,11 +117,15 @@
                 <div class="internship-btec">
                     <p>IT Network & System Administration Intern - Implementation and maintenance of IT infrastructure.</p>
                     <div>
-                        <span>Université of Lorraine - Nancy</span>
+                        <span>Epinal</span>
                         <span>May - June 2019 & Jan. - Feb. 2020</span>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="second-row">
+
         </div>
 
         <div class="skills-container">
@@ -145,12 +154,12 @@
     </div>
 
     <div id="projects" class="projects-container">
-        <h2>Here are projects I realized: </h2>
+        <h2>Here are some projects I realized: </h2>
         <div class="projects">
             <div class="project-card card">
-                <h2>Machine Translation</h2>
-                <p>Creating a machine translation system using PyTorch, spaCy and transformers</p>
-                <a href="#">Discover it</a>
+                <h2>2584 Java Game</h2>
+                <p>Adapting 2048 famous game to a Fibonacci's suite version in Java.</p>
+                <a href="https://github.com/MHaurel/G3-Jeu2584-2021-Dekkers-Abid-Braux-Haurel" target="_blank">Discover it</a>
             </div>
 
             <div class="project-card card">
@@ -168,15 +177,24 @@
     </div>
 
     <div id="contact" class="contact-container">
-        <h2>If you want to contact me</h2>
-        <form action="#">
-            <label for="email">Your email: </label>
-            <input type="email" name="email" id="email">
-            <label for="text">Your message: </label>
-            <input type="text" name="email" id="email">
-        </form>
+        <div class="contact-image">
+            <img src="./resources/img/start-up.png" alt="Contact Image">
+        </div>
+        <div class="contact-form">
+            <h2>Fill in information to contact me</h2>
+            <form action="#">
+                <label for="email">Your Email</label>
+                <input type="email" name="email" id="email" value="recruiter@job.com">
+                <label for="text">Content</label>
+                <textarea name="content" id="content" cols="30" rows="5">Hello, I’m a recruiter for a junior AI engineer and your profile does interest us.
+Would you be able to reply this mail for further discussion about this job ?
+Regards.</textarea>
+                <button type="submit" value="Send">Send</button>
+            </form>
+        </div>
     </div>
 
+    <!-- 
     <div id="loren">
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
@@ -192,6 +210,7 @@
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
     </div>
+    -->
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
