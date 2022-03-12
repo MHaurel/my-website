@@ -1,10 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    
-</head>
-<body> -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,12 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Maxime Haurel</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="index" class="bg-white dark:bg-slate-100 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
         <div class="profile-container md:flex justify-self-center">
-            <img class="w-48 h-48 rounded-full" src="./resources/img/myself.png">
+            <img class="w-48 h-48 rounded-full" src="./resources/img/myself-2.jpg">
             <div class="pt-6 md:p-8 left ml-10">
                 <p class="text-5xl font-medium">
                     Maxime HAUREL
@@ -28,25 +24,15 @@
                     AI Student at IDMC, Université de Lorraine
                 </p>
             </div>
-            <div>
-                <a href="https://www.linkedin.com/in/maxime-haurel-326133182/" target="_blank"><img class="w-16 h-16" src="./resources/img/linkedin-logo.png" alt="My LinkedIn profile page"></a>
-            </div>
         </div>
-
-        <!-- Original navbar, need to work on this -->
-        <!-- <div class="flex flex-row">
-            <ul class="flex flex-col mt-4 md:flex-row md:space-x-10 md:mt-5 md:text-sm md:font-medium">
-                <li><a href="#index" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">PROFILE</a></li>
-                <li><a href="#education" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">EDUCATION</a></li>
-                <li><a href="#projects" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PROJECTS</a></li>
-                <li><a href="#contact" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CONTACT</a></li>
-            </ul>
-        </div> -->
+        <div>
+            <a href="https://www.linkedin.com/in/maxime-haurel-326133182/" target="_blank"><img class="w-16 h-16" src="./resources/img/linkedin-logo.png" alt="My LinkedIn profile page"></a>
+        </div>
     </div>
 
     <div id="navbar">
         <!-- block py-2 pr-4 pl-3 text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white -->
-        <a href="#index"aria-current="page">PROFILE</a></li>
+        <a href="#index" aria-current="page">PROFILE</a></li>
         <a href="#education">EDUCATION</a>
         <a href="#projects">PROJECTS</a>
         <a href="#contact">CONTACT</a>
@@ -55,11 +41,11 @@
     <div id="content" class="content-container">
         <h2>My goal is to achieve some concrete world related problems thanks to AI solutions.</h2>
         <div class="hobbies-container">
-            <h1>HOBBIES</h1>
+            <h1 class="font-bold text-2xl">HOBBIES</h1>
             <div class="astro">
                 <h2>Astronomy & Cosmology</h2>
                 <p>I have a deep interest about the universe and how all started.</p>
-                <p>"What are we ?" and "How are we ?" might be the most intriguous question I ever asked myself.</p>
+                <p>"What are we ?" and "How are we ?" might be the most intriguous questions I ever asked myself.</p>
                 <p>And this is by wondering this way that I am able to take an interest on some topics and solve problems.</p>
             </div>
             <div class="sport">
@@ -70,18 +56,15 @@
             <div class="trips">
                 <h2>Trips</h2>
                 <p>I love to take trips and use my languages skills to discover new places and cultures.</p>
-                <p>Usually shy, trips helped me open myslef to people and customs.</p>
+                <p>Usually shy, trips helped me open myself to people and customs.</p>
             </div>
         </div>
     </div>
 
     <div id="education" class="education-container">
-        <div class="first-row">
-
-        </div>
         <div class="diplomas-container">
-            <h2>DIPLOMAS</h2>
             <div class="diplomas">
+                <h1 class="font-bold text-2xl">DIPLOMAS</h1>
                 <div class="diploma-bsc">
                     <p>BSc. Mathematics & Computer Science applied to Human and Social Sciences 
                         specialized in Cognitive Sciences</p>
@@ -99,13 +82,17 @@
                     </div>
                 </div>
             </div>
+            <div class="illustration">
+                <img src="./resources/img/téléchargement.png" alt="Diplomas illustration">
+            </div>
         </div>
 
-        <!-- <div class="vl"></div> -->
-
         <div class="experience-container">
-            <h2>EXPERIENCE</h2>
+            <div class="illustration">
+                <img src="./resources/img/téléchargement.png" alt="Diplomas illustration">
+            </div>
             <div class="internships">
+                <h1 class="font-bold text-2xl">EXPERIENCE</h1>
                 <div class="internship-bsc">
                     <p>Research Intern - ANN layers extraction and alignment on knowledge-based models.</p>
                     <div>
@@ -124,12 +111,8 @@
             </div>
         </div>
 
-        <div class="second-row">
-
-        </div>
-
         <div class="skills-container">
-            <h2>SKILLS</h2>
+            <h1 class="font-bold text-2xl">SKILLS</h1>
             <ul>
                 <li>Programming (Python, Java, PHP, Javascript, ...)</li>
                 <li>Computational Linguistics</li>
@@ -144,7 +127,7 @@
         </div>
 
         <div class="languages-container">
-            <h2>LANGUAGES</h2>
+            <h1 class="font-bold text-2xl">LANGUAGES</h1>
             <ul>
                 <li>French - Native</li>
                 <li>English - B2</li>
@@ -163,16 +146,16 @@
             </div>
 
             <div class="project-card card">
-                <h2>Machine Translation</h2>
-                <p>Creating a machine translation system using PyTorch, spaCy and transformers</p>
-                <a href="#">Discover it</a>
+                <h2>Photography</h2>
+                <p>I've been picturing my life for some years and I tried to upload the best here</p>
+                <a href="https://www.flickr.com/photos/195175863@N03/" target="_blank">Discover it</a>
             </div>
         </div>
 
         
         <div class="github-button-container">
-            <p>Want to see other projects ? Click down below</p>
-            <a href="https://github.com/MHaurel" target="_blank">GitHub profile page</a>
+            <p>Want to see other projects ?</p>
+            <a class="button" href="https://github.com/MHaurel" target="_blank">GitHub profile page</a>
         </div>
     </div>
 
@@ -186,10 +169,13 @@
                 <label for="email">Your Email</label>
                 <input type="email" name="email" id="email" value="recruiter@job.com">
                 <label for="text">Content</label>
-                <textarea name="content" id="content" cols="30" rows="5">Hello, I’m a recruiter for a junior AI engineer and your profile does interest us.
+                <textarea name="content" id="content" cols="30" rows="5">Hello, I’m looking to hire a junior AI engineer and your profile does interest us.
 Would you be able to reply this mail for further discussion about this job ?
 Regards.</textarea>
-                <button type="submit" value="Send">Send</button>
+                <div>
+                    <button class="" type="submit" value="Send">Send</button>
+                    <label class="other-contact">Or contact me at <span>maxime.haurel0@gmail.com</span></label>
+                </div>
             </form>
         </div>
     </div>
