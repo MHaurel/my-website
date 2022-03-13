@@ -1,5 +1,17 @@
-window.onscroll = function() {updateOnScroll()};
+$(".button-send-mail").click(() => {
+  alert("This functionality is currently not working. Please send me a mail on the link below.")
+})
 
+// https://www.emailjs.com/
+
+$(".other-contact > span").click(() => {
+  var mailTo = "maxime.haurel0@gmail.com";
+  var subject = "Mail contact from website";
+  var body = document.getElementById('form-message').value;
+  window.open('mailto:' + mailTo + '?body=' + body);
+});
+
+window.onscroll = function() {updateOnScroll()};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;

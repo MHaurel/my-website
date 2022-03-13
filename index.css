@@ -186,9 +186,85 @@ body {
     align-items: center;
   }
 
-  .skills-container {
-    /* background-color: #04AA6D; */
+  .skills-container > h1 {
+    margin-bottom: 50px;
   }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 25px;
+    width: 35%; /* Initially 20% */
+    height: 200px;
+    margin: 0px 20px;
+    border-style: solid;
+
+    /* Neumorphism */
+    border-radius: 25px;
+    background: #e0e0e0;
+    box-shadow:  20px -20px 60px #bebebe,
+             -20px 20px 60px #ffffff;
+  }
+
+  .card > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card .subset {
+    font-style: italic;
+  }
+
+  .card .pad {
+    border-style: solid;
+    border-radius: 90px;
+    width: 24px;
+    height: 24px;
+    float: right;
+  }
+
+  .card .green {
+    background-color: #04AA6D;
+  }
+
+  .card .yellow {
+    background-color: #c9c603;
+  }
+
+  .card .orange {
+    background-color: #c98303;
+  }
+
+  .card .red {
+    background-color: #c93103;
+  }
+
+  .card > p > span {
+    font-size: 15px;
+  }
+
+  /* .card h2 {
+    margin-bottom: 20px;
+  } */
 
   .languages-container {
     /* background-color: tomato; */
@@ -208,9 +284,13 @@ body {
 
   .projects {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* row */
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  .projects > div {
+    margin: 20px 0px;
   }
 
   .projects * {
@@ -229,18 +309,6 @@ body {
   
   .projects a:hover {
     text-decoration: underline;
-  }
-
-  .card {
-    padding: 25px 10px;
-    border-radius: 8px;
-    border-style: solid;
-    background-color: bisque;
-    width: 20%;
-  }
-
-  .card > h2 {
-    font-weight: bold;
   }
 
   .github-button-container {
@@ -343,4 +411,9 @@ body {
     margin-left: 10px;
     font-style: italic;
     font-size: 15px;
+  }
+
+  .other-contact > span {
+    cursor: pointer;
+    text-decoration: underline;
   }

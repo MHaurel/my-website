@@ -32,7 +32,6 @@ if (isset($_POST['sendMailBtn'])) {
     $result = @mail($to, $subject, $message, $headers);
 
     echo '<script>alert("Email sent successfully !")</script>';
-    print_r($_POST);
     // echo '<script>window.location.href="index.html";</script>';
 
 }
