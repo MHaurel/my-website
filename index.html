@@ -165,15 +165,13 @@
         </div>
         <div class="contact-form">
             <h2>Fill in information to contact me</h2>
-            <form action="#">
+            <form action="post_mail.php" method="post">
                 <label for="email">Your Email</label>
-                <input type="email" name="email" id="email" value="recruiter@job.com">
+                <input placeholder="youremail@smthng.com" type="email" name="fromEmail" id="email" value="">
                 <label for="text">Content</label>
-                <textarea name="content" id="content" cols="30" rows="5">Hello, I’m looking to hire a junior AI engineer and your profile does interest us.
-Would you be able to reply this mail for further discussion about this job ?
-Regards.</textarea>
+                <textarea placeholder="Message" name="message" id="content" cols="30" rows="5"></textarea>
                 <div>
-                    <button class="" type="submit" value="Send">Send</button>
+                    <button class="" type="submit" value="Send" name="sendMailBtn">Send</button>
                     <label class="other-contact">Or contact me at <span>maxime.haurel0@gmail.com</span></label>
                 </div>
             </form>

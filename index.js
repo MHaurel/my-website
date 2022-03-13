@@ -33,7 +33,7 @@ function updateOnScroll() {
     navbar.children[1].classList.add("highlighted");
   } 
 
-  if (y >= (projectsDiv.offsetTop - 10) && y < contactDiv.offsetTop) {
+  if (y >= (projectsDiv.offsetTop - 100) && y < contactDiv.offsetTop) {
     clearHighlightNavbar();
     // Highlight projects navbar button
     navbar.children[2].classList.add("highlighted");

@@ -290,7 +290,16 @@ body {
     margin-top: 20px;
   } 
 
-  .contact-form > form > input, textarea {
+  .contact-form > form > input {
+    border: solid 1px black;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contact-form > form > textarea {
     border: solid 1px black;
     border-radius: 8px;
     width: 100%;
