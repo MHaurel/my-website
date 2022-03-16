@@ -14,9 +14,9 @@
 <body>
 
     <div id="index" class="bg-white dark:bg-slate-100 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-        <div class="profile-container md:flex justify-self-center">
+        <div class="profile-container">
             <img class="w-48 h-48 rounded-full" src="./resources/img/myself-2.jpg">
-            <div class="pt-6 md:p-8 left ml-10">
+            <div class="text-info">
                 <p class="text-5xl font-medium">
                     Maxime HAUREL
                 </p>
@@ -39,7 +39,10 @@
     </div>
 
     <div id="content" class="content-container">
-        <h2>My goal is to achieve some concrete world related problems thanks to AI solutions.</h2>
+        <div class="presentation">
+            <h2>Interested on AI and its applications.</h2>
+            <h3>Learning Artificial Intelligence to help science growing and solve concrete world related problems.</h3>
+        </div>
         <div class="hobbies-container">
             <h1 class="font-bold text-2xl">HOBBIES</h1>
             <div class="astro">
@@ -62,24 +65,75 @@
     </div>
 
     <div id="education" class="education-container">
+        <div class="skills-container">
+            <h1 class="font-bold text-2xl">SKILLS</h1>
+            <ul class="skills">
+                <div>
+                    <li class="new-card">
+                        <div>
+                            <h2>Artificial Intelligence</h2>
+                            <!-- <span title="Mastered" class="pad green"></span> -->
+                        </div>
+                        <p>Knowledge-based systems</p>
+                        <h3>Machine Learning</h3>
+                        <ul>
+                            <li>  - Random Forest</li>
+                            <li>  - Linear Regression</li>
+                            <li>  - Clustering</li>
+                        </ul>
+                        <h3>NLP</h3>
+                        <ul>
+                            <li>  - Word Embeddings (Word2Vec)</li>
+                        </ul>
+                        <p>NLTK, pandas, scikit-learn, pyTorch</p>
+                        <p>Neural Networks</p>
+                    </li>
+                    <li class="new-card">
+                        <div>
+                            <h2>Programming</h2>
+                            <!-- <span title="Learning" class="pad yellow"></span> -->
+                        </div>
+                        <p>Python</p>
+                        <p>SQL, MongoDB</p>
+                        <p>Java, JavaFX</p>
+                        <p>PHP, Laravel</p>
+                        <p>HTML/CSS, Javascript</p>
+                        <p>Anaconda, Google Colab</p>
+                        <p>Software Engineering</p>
+                    </li>
+                    <li class="new-card">
+                        <div>
+                            <h2>Project Management</h2>
+                            <!-- <span title="Learning" class="pad yellow"></span> -->
+                        </div>
+                        <p>Collecting needs</p>
+                        <p>Digital innovation</p>
+                        <p>Business analysis</p>
+                        <p>Agile methods</p>
+                        <p>Risks analysis</p>
+                        <p>Sketching prototype (Figma, Adobe XD)</p>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
         <div class="diplomas-container">
             <div class="diplomas">
                 <h1 class="font-bold text-2xl">DIPLOMAS</h1>
+                <div class="diploma-msc">
+                    <h2>MSc. Cognitive Sciences specialized in Cognitive Engineering, Interaction and Artificial Intelligence</h2>
+                    <p>2022 - 2024, IDMC - University of Lorraine, Nancy</p>
+                </div>
+
                 <div class="diploma-bsc">
-                    <p>BSc. Mathematics & Computer Science applied to Human and Social Sciences 
-                        specialized in Cognitive Sciences</p>
-                    <div>
-                        <span>Université of Lorraine - Nancy</span>
-                        <span>2020 - 2022</span>
-                    </div>
+                    <h2>BSc. Mathematics & Computer Science applied to Human and Social Sciences 
+                        specialized in Cognitive Sciences</h2>
+                    <p>2020 - 2022, IDMC - University of Lorraine, Nancy</p>
                 </div>
 
                 <div class="diploma-btec">
-                    <p>BTEC Higher National Diploma IT network and system administration</p>
-                    <div>
-                        <span>Frederic Chopin High School - Nancy</span>
-                        <span>2018 - 2020</span>
-                    </div>
+                    <h2>BTEC Higher National Diploma IT network and system administration</h2>
+                    <p>2018 - 2020, Frédéric Chopin High School, Nancy</p>
                 </div>
             </div>
             <div class="illustration">
@@ -89,95 +143,28 @@
 
         <div class="experience-container">
             <div class="illustration">
-                <img src="./resources/img/téléchargement.png" alt="Diplomas illustration">
+                <img src="./resources/img/téléchargement.png" alt="Experience illustration">
             </div>
             <div class="internships">
                 <h1 class="font-bold text-2xl">EXPERIENCE</h1>
                 <div class="internship-bsc">
-                    <p>Research Intern - ANN layers extraction and alignment on knowledge-based models.</p>
-                    <div>
-                        <span>Loria - Villers-lès-Nancy</span>
-                        <span>May - July 2022</span>
-                    </div>
+                    <h2>Research Intern</h2>
+                    <p>ANN layers extraction and alignment on knowledge-based models</p>
+                    <p class="location">May - July 2022, Loria, Villers-lès-Nancy</p>
                 </div>
 
-                <div class="internship-btec">
-                    <p>IT Network & System Administration Intern - Implementation and maintenance of IT infrastructure.</p>
-                    <div>
-                        <span>Epinal</span>
-                        <span>May - June 2019 & Jan. - Feb. 2020</span>
-                    </div>
+                <div class="internship-btec-2">
+                    <h2>IT Network Administration Intern</h2>
+                    <p>Implementation and maintenance of an IT network infrastructure</p>
+                    <p class="location">January - February 2020, City Hall, Epinal</p>
+                </div>
+
+                <div class="internship-btec-1">
+                    <h2>IT System Administration Intern</h2>
+                    <p>Implementation and maintenance of an IT system infrastructure</p>
+                    <p class="location">May - June 2019, Notre-Dame St-Joseph High School, Epinal</p>
                 </div>
             </div>
-        </div>
-
-        <div class="skills-container">
-            <h1 class="font-bold text-2xl">SKILLS</h1>
-            <ul class="skills">
-                <div>
-                    <li class="card">
-                        <div>
-                            <h2>Programming</h2>
-                            <span title="Mastered" class="pad green"></span>
-                        </div>
-                        <p>Python, Java, PHP, Javascript</p>
-                        <p>APIs, backend web development (Laravel)</p>
-                        <p>Databases</p>
-                        <p>IDEs</p>
-                    </li>
-                    <li class="card">
-                        <div>
-                            <h2>Machine Learning</h2>
-                            <span title="Learning" class="pad yellow"></span>
-                        </div>
-                        <p>Natural Language Processing notions</p>
-                        <p class="subset"> - Sentiment Analysis</p>
-                        <p>Deep Learning notions</p>
-                        <p>spaCy, numpy, pandas, scikit-learn</p>
-                    </li>
-                    <li class="card">
-                        <div>
-                            <h2>Techniques for AI</h2>
-                            <span title="Learning" class="pad yellow"></span>
-                        </div>
-                        <p>Decision Trees, Clustering</p>
-                        <p>Bayesian networks</p>
-                        <p>Probabilities & Statistics</p>
-                        <p>Principal Component Analysis (PCA)</p>
-                    </li>
-                </div>
-                
-                <div>
-                    <li class="card">
-                        <div>
-                            <h2>UX Notions</h2>
-                            <span title="Notions" class="pad orange"></span>
-                        </div>
-                        <p>Heuristic inspection & evaluation</p>
-                        <p>Use of Figma & Gimp</p>
-
-                    </li>
-                    <li class="card">
-                        <div>
-                            <h2>IT Project Management</h2>
-                            <span title="Notions" class="pad orange"></span>
-                        </div>
-                        <p>UML conception</p>
-                        <p>Digital innovation</p>
-                        <p>Personas, user journey</p>
-                        <p>Management and studies of business</p>
-                    </li>
-                    <li class="card">
-                        <div>
-                            <h2>Academic Research</h2>
-                            <span title="Will be learned soon" class="pad red"></span>
-                        </div>
-                        <p>Bibliographic search</p>
-                        <p>Validate research results</p>
-                        <p>Experience in academic lab <span>(May 2nd 2022)</span></p>
-                    </li>
-                </div>
-            </ul>
         </div>
 
         <div class="languages-container">
@@ -191,22 +178,50 @@
     </div>
 
     <div id="projects" class="projects-container">
-        <h2>Here are some projects I realized: </h2>
+        <h1 class="font-bold text-2xl">PROJECTS</h1>
         <div class="projects">
-            <div class="project-card card">
+            <div class="new-card">
+                <h2>Pet's Groove</h2>
+                <p>Managing bachelor's project of a mobile application</p>
+                <div>
+                    <a class="discover-project-button" href="#projects" target="_blank">Discover it</a>
+                    <div class="project-tags">
+                        <span class="project-management">Collecting needs</span>
+                        <span class="project-management">Digital innovation</span>
+                        <span class="project-management">Agile methods</span>
+                        <span class="project-management">Sketching prototype</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-card">
                 <h2>2584 Java Game</h2>
                 <p>Adapting 2048 famous game to a Fibonacci's suite version in Java.</p>
-                <a href="https://github.com/MHaurel/G3-Jeu2584-2021-Dekkers-Abid-Braux-Haurel" target="_blank">Discover it</a>
+                <div>
+                    <a class="discover-project-button" href="https://github.com/MHaurel/G3-Jeu2584-2021-Dekkers-Abid-Braux-Haurel" target="_blank">Discover it</a>
+                    <div class="project-tags">
+                        <span class="programming">JavaFX</span>
+                        <span class="programming">Software Engineering</span>
+                        <span class="programming">SQL</span>
+                        <span class="project-management">Agile methods</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="project-card card">
-                <h2>Photography</h2>
-                <p>I've been picturing my life for some years and I tried to upload the best here</p>
-                <a href="https://www.flickr.com/photos/195175863@N03/" target="_blank">Discover it</a>
+            <div class="new-card">
+                <h2>Cron</h2>
+                <p>Interacting with APIs to display science news</p>
+                <div>
+                    <a class="discover-project-button" href="https://github.com/MHaurel/Cron" target="_blank">Discover it</a>
+                    <div class="project-tags">
+                        <span class="programming">Python</span>
+                    </div>
+                </div>
             </div>
+
+
+            
         </div>
-
-        
         <div class="github-button-container">
             <p>Want to see other projects ?</p>
             <a class="button" href="https://github.com/MHaurel" target="_blank">GitHub profile page</a>
@@ -231,24 +246,6 @@
             </form>
         </div>
     </div>
-
-    <!-- 
-    <div id="loren">
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    </div>
-    -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>

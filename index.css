@@ -44,6 +44,22 @@ body {
     justify-content: space-evenly;
     align-items: center;
   }
+
+  .text-info {
+    padding-top: 1.5rem;
+    float: left;
+    margin-left: 2.5rem
+  }
+
+  @media screen and (max-width: 800px) {
+    #index, .profile-container {
+      flex-direction: column;
+    }
+
+    .profile-container {
+      margin-bottom: 10px;
+    }
+  }
   
   .sticky {
     position: fixed;
@@ -59,10 +75,19 @@ body {
     color: #f1f1f1;
   }
 
-  .content-container > h2 {
+  .content-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
     margin: 50px 0px;
     font-size: 25px;
   }
@@ -99,6 +124,17 @@ body {
     margin: 5px 0px;
   }
 
+  @media screen and (max-width: 950px) {
+    .hobbies-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hobbies-container > div {
+      width: 60%;
+    }
+  }
+
   .education-container {
     padding: 50px 50px;
     display: flex;
@@ -118,89 +154,18 @@ body {
     font-weight: bold;
   }
 
-  .diplomas-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 50px;
-    grid-auto-rows: minmax(100px, 2);
-    /* background-color: bisque; */
-  }
-
-  .diplomas-container > .diplomas {
-    grid-column: 1/2;
-    grid-row: 1/1;
-    place-self: center;
-  }
-
-  .diplomas-container > .illustration {
-    grid-column: 2/3;
-    grid-row: 1/1;
-    place-self: center;
-  }
-
-  .diplomas-container > * {
-    width: 100%;
-  }
-
-  .diplomas > div {
-    margin: 50px 5px;
-  }
-
-  .diplomas > div > div {
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .experience-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 50px;
-    grid-auto-rows: minmax(100px, 2);
-    /* background-color: aqua; */
-  }
-
-  .experience-container > .internships {
-    grid-column: 2/3;
-    grid-row: 1/1;
-    place-self: center;
-  }
-
-  .experience-container > .illustration {
-    grid-column: 1;
-    grid-row: 1/1;
-    place-self: center;
-  }
-
-  .internships > div {
-    margin: 50px 5px;
-  }
-
-  .internships > div > div {
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .skills-container > h1 {
     margin-bottom: 50px;
-  }
-
-  .skills {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
 
   .skills > div {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin: 10px 0px;
+    height: 100%;
   }
 
   .card {
@@ -210,7 +175,8 @@ body {
     align-items: flex-start;
     padding: 10px 25px;
     width: 35%; /* Initially 20% */
-    height: 200px;
+    /* height: 400px; */
+    height: 100%; /* Cards don't have the same size but reponsive in height */
     margin: 0px 20px;
     border-style: solid;
 
@@ -228,6 +194,23 @@ body {
     align-items: center;
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 950px) {
+    .skills > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .skills .card {
+      width: 60%;
+      margin-bottom: 20px;
+    }
   }
 
   .card .subset {
@@ -262,20 +245,93 @@ body {
     font-size: 15px;
   }
 
+  .card h2 {
+    font-weight: bold;
+  }
+
   /* .card h2 {
     margin-bottom: 20px;
   } */
+
+  .diplomas-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    grid-auto-rows: minmax(100px, 2);
+    /* background-color: bisque; */
+  }
+
+  .diplomas-container > .diplomas {
+    grid-column: 1/2;
+    grid-row: 1/1;
+    place-self: center;
+  }
+
+  .diplomas-container > .illustration {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    place-self: center;
+  }
+
+  .diplomas-container > * {
+    width: 100%;
+  }
+
+  .diplomas > div {
+    margin: 40px 5px;
+  }
+
+  .diplomas > div > h2 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .experience-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    grid-auto-rows: minmax(100px, 2);
+    /* background-color: aqua; */
+  }
+
+  .experience-container > .internships {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    place-self: center;
+  }
+
+  .experience-container > .illustration {
+    grid-column: 1;
+    grid-row: 1/1;
+    place-self: center;
+  }
+
+  .internships > div {
+    margin: 40px 5px;
+  }
+
+  .internships > div > h2 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .location {
+    font-size: 18px;
+  }
 
   .languages-container {
     /* background-color: tomato; */
   }
 
   .projects-container {
-    padding: 0px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 50px 50px;
+    width: 100%;
   }
 
   .projects-container > h2 {
@@ -284,41 +340,181 @@ body {
 
   .projects {
     display: flex;
-    flex-direction: column; /* row */
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
-  .projects > div {
-    margin: 20px 0px;
-  }
-
-  .projects * {
+  .projects .new-card {
+    /* width: 60%; */
+    width: fit-content;
+    margin-top: 3rem;
     width: 100%;
+    border-bottom: solid 1px #000000;
   }
 
-  .projects p {
-    font-size: 20px;
-  }
-
-  .projects a {
+  .projects .new-card > div {
+    margin-top: 1rem;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
   }
-  
-  .projects a:hover {
+
+
+
+
+
+  .new-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 25px;
+    width: 35%; /* Initially 20% */
+    /* height: 400px; */
+    height: 100%; /* Cards don't have the same size but reponsive in height */
+    margin: 0px 20px;
+    border-style: solid;
+  }
+
+  .new-card > div {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .new-card .subset {
+    font-style: italic;
+  }
+
+  .new-card .pad {
+    border-style: solid;
+    border-radius: 90px;
+    width: 24px;
+    height: 24px;
+    float: right;
+  }
+
+  .new-card .green {
+    background-color: #04AA6D;
+  }
+
+  .new-card .yellow {
+    background-color: #c9c603;
+  }
+
+  .new-card .orange {
+    background-color: #c98303;
+  }
+
+  .new-card .red {
+    background-color: #c93103;
+  }
+
+  .new-card > p > span {
+    font-size: 15px;
+  }
+
+  .new-card h2 {
+    font-weight: bold;
+  }
+
+  .discover-project-button {
+    font-style: italic;
+  }
+
+  .discover-project-button:hover {
     text-decoration: underline;
+    
+  }
+
+  .project-tags > * {
+    margin-left: 1.5rem;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: smaller;
+  }
+
+  .project-tags > .ai {
+    background-color: #d4a60e;
+  }
+
+  .project-tags > .programming {
+    background-color: #41A056;
+  }
+
+  .project-tags > .project-management {
+    background-color: #d1343c;
+  }
+
+  @media screen and (max-width: 750px) {
+
+    .projects .new-card {
+      width: fit-content;
+      margin-top: 3rem;
+      border-bottom: solid 1px #000000;
+    }
+
+    .projects-container {
+      padding: 50px 0px;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    .new-card {
+      margin: 0px 10px;
+    }
+
+    .projects .new-card > p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .projects .new-card > div {
+      flex-direction: column;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .project-tags > * {
+      margin-left: 0rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 0.75rem;
+    }
   }
 
   .github-button-container {
     margin-top: 20px;
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .github-button-container > a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 1rem;
+    width: fit-content;
   }
 
   .contact-container {
@@ -327,6 +523,7 @@ body {
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     padding-bottom: 50px;
+    margin-top: 80px;
   }
 
   .contact-image {
@@ -401,6 +598,20 @@ body {
     color: white;
     background-color: #005377;
     border-radius: 8px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .contact-form > form > div {
+      margin-top: 5px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .contact-form > form > div > button {
+      width: 40%;
+    }
   }
 
   .contact-form > form > div > button:hover {
