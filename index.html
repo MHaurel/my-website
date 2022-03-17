@@ -40,13 +40,13 @@
 
     <div id="content" class="content-container">
         <div class="presentation">
-            <h2>Interested on AI and its applications.</h2>
-            <h3>Learning Artificial Intelligence to help science growing and solve concrete world related problems.</h3>
+            <h2>Actively looking for an apprenticeship in AI/AR for Cognitive Sciences or Natural Language Processing.</h2>
+            <h3>Interested on Artificial Intelligence and its applications, learning AI to help science growing and solve concrete world related problems.</h3>
         </div>
         <div class="hobbies-container">
             <h1 class="font-bold text-2xl">HOBBIES</h1>
             <div class="astro">
-                <h2>Astronomy & Cosmology</h2>
+                <h2>Astronomy/Cosmology</h2>
                 <p>I have a deep interest about the universe and how all started.</p>
                 <p>"What are we ?" and "How are we ?" might be the most intriguous questions I ever asked myself.</p>
                 <p>And this is by wondering this way that I am able to take an interest on some topics and solve problems.</p>
@@ -75,13 +75,13 @@
                             <!-- <span title="Mastered" class="pad green"></span> -->
                         </div>
                         <p>Knowledge-based systems</p>
-                        <h3>Machine Learning</h3>
+                        <h3>Machine Learning:</h3>
                         <ul>
                             <li>  - Random Forest</li>
                             <li>  - Linear Regression</li>
                             <li>  - Clustering</li>
                         </ul>
-                        <h3>NLP</h3>
+                        <h3>NLP:</h3>
                         <ul>
                             <li>  - Word Embeddings (Word2Vec)</li>
                         </ul>
@@ -169,10 +169,21 @@
 
         <div class="languages-container">
             <h1 class="font-bold text-2xl">LANGUAGES</h1>
-            <ul>
-                <li>French - Native</li>
-                <li>English - B2</li>
-                <li>Spanish - B1</li>
+            <ul class="languages">
+                <div class="new-card">
+                    <img src="./resources/img/france.png" alt="France flag">
+                    <li>French - Native</li>
+                </div>
+
+                <div class="new-card">
+                    <img src="./resources/img/united-kingdom.png" alt="UK flag">
+                    <li>English - B2</li>
+                </div>
+
+                <div class="new-card">
+                    <img src="./resources/img/spain.png" alt="Spain flag">
+                    <li>Spanish - B1</li>
+                </div>
             </ul>
         </div>
     </div>
@@ -224,27 +235,33 @@
         </div>
         <div class="github-button-container">
             <p>Want to see other projects ?</p>
-            <a class="button" href="https://github.com/MHaurel" target="_blank">GitHub profile page</a>
+            <a class="button" href="https://github.com/MHaurel" target="_blank">My GitHub profile page</a>
         </div>
     </div>
 
     <div id="contact" class="contact-container">
-        <div class="contact-image">
-            <img src="./resources/img/start-up.png" alt="Contact Image">
+        <h1 class="font-bold text-2xl">CONTACT</h1>
+        <div class="contact">
+            <div class="contact-image">
+                <img src="./resources/img/start-up.png" alt="Contact Image">
+            </div>
+            <div class="contact-form">
+                <h2>Fill in information to contact me</h2>
+                <form action="" method=""> 
+                    <label for="email">Your Email</label>
+                    <input placeholder="youremail@smthng.com" type="email" name="fromEmail" id="email" value="">
+                    <label for="subject">Subject</label>
+                    <input placeholder="Subject" type="text" name="subject" id="form-subject" value="">
+                    <label for="text">Content</label>
+                    <textarea placeholder="Message" name="message" id="form-message" cols="30" rows="5"></textarea>
+                    <div>
+                        <button class="button-send-mail" type="submit" value="Send" name="sendMailBtn">Send</button>
+                        <label class="other-contact">Or contact me at <span>maxime.haurel0@gmail.com</span></label>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="contact-form">
-            <h2>Fill in information to contact me</h2>
-            <form action="" method=""> 
-                <label for="email">Your Email</label>
-                <input placeholder="youremail@smthng.com" type="email" name="fromEmail" id="email" value="">
-                <label for="text">Content</label>
-                <textarea placeholder="Message" name="message" id="form-message" cols="30" rows="5"></textarea>
-                <div>
-                    <button class="button-send-mail" type="submit" value="Send" name="sendMailBtn">Send</button>
-                    <label class="other-contact">Or contact me at <span>maxime.haurel0@gmail.com</span></label>
-                </div>
-            </form>
-        </div>
+        
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

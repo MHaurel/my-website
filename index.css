@@ -7,7 +7,7 @@ body {
   #navbar {
     overflow: hidden;
     background-color: #005377;
-    color: #868686;
+    color: #a7a7a7;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -22,7 +22,7 @@ body {
   }
   
   #navbar a:hover {
-    background-color: #ddd;
+    background-color: #d6d5d5;
     color: black;
   }
   
@@ -73,6 +73,7 @@ body {
 
   .highlighted {
     color: #f1f1f1;
+    border-bottom: solid rgb(243, 243, 243);
   }
 
   .content-container {
@@ -86,10 +87,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: center; */
     width: 80%;
-    margin: 50px 0px;
+    margin: 50px 40px;
     font-size: 25px;
+  }
+
+  .presentation > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .presentation > h2 {
+    font-weight: bolder;
   }
 
   .hobbies-container {
@@ -115,23 +129,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.75rem;
     margin-bottom: 20px;
   }
 
   .hobbies-container > div > p {
-    font-size: 20px;
-    margin: 5px 0px;
+    font-size: 1.25rem;
   }
 
   @media screen and (max-width: 950px) {
+    .presentation {
+      margin: 50px 0px;
+    }
+
     .hobbies-container {
       flex-direction: column;
-      align-items: center;
+      justify-content: center;
+      padding: 50px 10px 0px 10px;
     }
 
     .hobbies-container > div {
-      width: 60%;
+      margin-top: 3rem;
+      align-items: flex-start;
+      width: 90%;
+      padding: 10px 25px;
+    }
+
+    .hobbies-container > div > h2 {
+      font-size: 1.5rem;
+    }
+
+    .hobbies-container > div > p {
+      font-size: 1rem;
     }
   }
 
@@ -151,7 +180,15 @@ body {
   }
 
   .education-container h2 {
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .skills-container > h1 {
@@ -160,40 +197,16 @@ body {
   }
 
   .skills > div {
+    /* width: fit-content; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* align-items: center; */
+    justify-content: space-between;
     margin: 10px 0px;
     height: 100%;
   }
 
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 10px 25px;
-    width: 35%; /* Initially 20% */
-    /* height: 400px; */
-    height: 100%; /* Cards don't have the same size but reponsive in height */
-    margin: 0px 20px;
-    border-style: solid;
-
-    /* Neumorphism */
-    border-radius: 25px;
-    background: #e0e0e0;
-    box-shadow:  20px -20px 60px #bebebe,
-             -20px 20px 60px #ffffff;
-  }
-
-  .card > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
+  .skills > div > li {
+    margin: 0px 2rem;
   }
 
   @media screen and (max-width: 950px) {
@@ -207,51 +220,11 @@ body {
       width: 100%;
     }
 
-    .skills .card {
-      width: 60%;
+    .skills .new-card {
+      width: 100%;
       margin-bottom: 20px;
     }
   }
-
-  .card .subset {
-    font-style: italic;
-  }
-
-  .card .pad {
-    border-style: solid;
-    border-radius: 90px;
-    width: 24px;
-    height: 24px;
-    float: right;
-  }
-
-  .card .green {
-    background-color: #04AA6D;
-  }
-
-  .card .yellow {
-    background-color: #c9c603;
-  }
-
-  .card .orange {
-    background-color: #c98303;
-  }
-
-  .card .red {
-    background-color: #c93103;
-  }
-
-  .card > p > span {
-    font-size: 15px;
-  }
-
-  .card h2 {
-    font-weight: bold;
-  }
-
-  /* .card h2 {
-    margin-bottom: 20px;
-  } */
 
   .diplomas-container {
     display: grid;
@@ -326,7 +299,65 @@ body {
   }
 
   .languages-container {
-    /* background-color: tomato; */
+    width: 100%;
+  }
+
+  .languages-container > .languages {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .languages .new-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .languages .new-card img {
+    width: 60%;
+    margin-bottom: -1rem;
+  }
+
+  @media screen and (max-width: 950px) {
+
+    .education-container {
+      padding: 50px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .diplomas-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .experience-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .illustration {
+      display: none;
+    }
+
+    .languages-container > .languages {
+      flex-direction: column;
+    }
+
+    .languages > .new-card {
+      width: 80%;
+    }
   }
 
   .projects-container {
@@ -343,12 +374,11 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: 2rem;
   }
 
   .projects .new-card {
-    /* width: 60%; */
     width: fit-content;
-    margin-top: 3rem;
     width: 100%;
     border-bottom: solid 1px #000000;
   }
@@ -361,10 +391,6 @@ body {
     align-items: center;
   }
 
-
-
-
-
   .new-card {
     display: flex;
     flex-direction: column;
@@ -374,7 +400,7 @@ body {
     width: 35%; /* Initially 20% */
     /* height: 400px; */
     height: 100%; /* Cards don't have the same size but reponsive in height */
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
     border-style: solid;
   }
 
@@ -416,11 +442,16 @@ body {
   }
 
   .new-card > p > span {
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   .new-card h2 {
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 1.5rem;
+  }
+
+  .new-card p {
+    font-size: 1.1rem;
   }
 
   .discover-project-button {
@@ -456,16 +487,20 @@ body {
 
     .projects .new-card {
       width: fit-content;
-      margin-top: 3rem;
+      /* margin-top: 3rem; */
       border-bottom: solid 1px #000000;
     }
 
     .projects-container {
-      padding: 50px 0px;
+      padding: 50px 10px;
       width: 100%;
     }
 
     a {
+      text-decoration: underline;
+    }
+
+    a:visited {
       text-decoration: underline;
     }
 
@@ -480,7 +515,7 @@ body {
     }
 
     .projects .new-card > div {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
 
     .project-tags {
@@ -498,6 +533,10 @@ body {
       width: 100%;
       margin-top: 0.75rem;
     }
+  }
+
+  .education-container > div {
+    margin-bottom: 4rem;
   }
 
   .github-button-container {
@@ -518,12 +557,15 @@ body {
   }
 
   .contact-container {
+    padding: 50px 50px 0px 50px;
+  }
+
+  .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     padding-bottom: 50px;
-    margin-top: 80px;
   }
 
   .contact-image {
@@ -601,6 +643,22 @@ body {
   }
 
   @media screen and (max-width: 500px) {
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-container {
+      padding: 50px 10px 0px 10px;
+    }
+
+    .contact-form {
+      padding: 0px 0px;
+      padding-top: 2rem;
+    }
+
     .contact-form > form > div {
       margin-top: 5px;
       width: 100%;
@@ -609,6 +667,11 @@ body {
       justify-content: flex-start;
       align-items: center;
     }
+
+    .contact-image {
+      display: none;
+    }
+
     .contact-form > form > div > button {
       width: 40%;
     }

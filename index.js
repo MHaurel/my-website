@@ -6,9 +6,9 @@ $(".button-send-mail").click(() => {
 
 $(".other-contact > span").click(() => {
   var mailTo = "maxime.haurel0@gmail.com";
-  var subject = "Mail contact from website";
+  var subject = document.getElementById('form-subject').value;
   var body = document.getElementById('form-message').value;
-  window.open('mailto:' + mailTo + '?body=' + body);
+  window.open('mailto:' + mailTo + '?subject=' + subject + '&body=' + body);
 });
 
 window.onscroll = function() {updateOnScroll()};
