@@ -113,9 +113,9 @@ body {
     justify-content: space-evenly;
   }
 
-  h1 {
+  body h1 {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   .hobbies-container > div {
@@ -140,6 +140,15 @@ body {
   @media screen and (max-width: 950px) {
     .presentation {
       margin: 50px 0px;
+    }
+
+    .presentation > h2 {
+      font-size: 1.6rem;
+    }
+
+    .presentation > h3 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
     }
 
     .hobbies-container {
@@ -209,6 +218,18 @@ body {
     margin: 0px 2rem;
   }
 
+  .skills > div > li {
+    font-size: 1.1rem;
+  }
+
+  .skills > div > h3 {
+    font-size: 1.1rem;
+  }
+
+  .skills > div > p {
+    font-size: 1.1rem;
+  }
+
   @media screen and (max-width: 950px) {
     .skills > div {
       display: flex;
@@ -256,10 +277,15 @@ body {
 
   .diplomas > div > h2 {
     font-weight: bold;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .illustration {
+    display: none;
   }
 
   .experience-container {
@@ -338,6 +364,10 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+
+    .diplomas > div > h2 { 
+      font-weight: normal;
     }
 
     .experience-container {
@@ -584,6 +614,7 @@ body {
 
   .contact-form > h2 {
     font-weight: bold;
+    font-size: inherit;
   }
 
   .contact-form > form {
