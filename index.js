@@ -1,8 +1,38 @@
-$(".button-send-mail").click(() => {
-  alert("This functionality is currently not working. Please send me a mail on the link below.")
+document.getElementById("form").addEventListener("submit", function(e){
+  console.log("Form submit")
+  e.preventDefault();
+  let data = new FormData(document.getElementById("form"));
+  xml.open("POST", "post_mail.php");
+  xml.send(data);
 })
 
-// https://www.emailjs.com/
+
+var xml = new XMLHttpRequest();
+xml.onreadystatechange = function() {
+  var message = "";
+  // var divMsg = document.getElementById("divMsgForm");
+  if( xml.readyState==4 && xml.status==200 ){
+      // message = "Votre message a bien été envoyé";
+      // for (let i = 0; i < document.getElementsByClassName("formElt").length; i++) {
+      //     document.getElementsByClassName("formElt")[i].value = "";
+      //     divMsg.style.backgroundColor = "#22C737";
+      //     divMsg.style.padding = "25px";
+      //     divMsg.style.marginBottom = "15px";
+      // }
+      console.log("Votre message a bien été envoyé")
+  }
+  else if(xml.status!=200){
+      // message = "Erreur, veuillez réessayer"
+      // divMsg.style.backgroundColor = "#ff0033";
+      // divMsg.style.padding = "25px";
+      // divMsg.style.marginBottom = "15px";
+      console.log("Erreur, veuillez rééssayer")
+  }
+  
+  // divMsg.innerText = message;
+  // fadeOutEffect();
+
+};
 
 $(".other-contact > span").click(() => {
   var mailTo = "maxime.haurel0@gmail.com";
