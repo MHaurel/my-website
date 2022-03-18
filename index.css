@@ -73,7 +73,7 @@ body {
 
   .highlighted {
     color: #f1f1f1;
-    border-bottom: solid rgb(243, 243, 243);
+    border-bottom: solid #f3f3f3;
   }
 
   .content-container {
@@ -247,32 +247,46 @@ body {
     }
   }
 
-  .diplomas-container {
-    display: grid;
+  .diplomas-container > div {
+    /* display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
-    grid-auto-rows: minmax(100px, 2);
-    /* background-color: bisque; */
+    grid-auto-rows: minmax(100px, 2); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
-  .diplomas-container > .diplomas {
-    grid-column: 1/2;
+  .diplomas {
+    /* grid-column: 1/2;
     grid-row: 1/1;
-    place-self: center;
-  }
-
-  .diplomas-container > .illustration {
-    grid-column: 2/3;
-    grid-row: 1/1;
-    place-self: center;
-  }
-
-  .diplomas-container > * {
+    place-self: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
+  .diplomas-container .illustration {
+    /* grid-column: 2/3;
+    grid-row: 1/1;
+    place-self: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+  }
+
+  /* .diplomas-container > * {
+    width: 100%;
+  } */
+
   .diplomas > div {
     margin: 40px 5px;
+    width: 100%;
   }
 
   .diplomas > div > h2 {
@@ -284,32 +298,48 @@ body {
     align-items: center;
   }
 
-  .illustration {
-    display: none;
+  .experience-container {
+    width: 100%;
   }
 
-  .experience-container {
-    display: grid;
+  .experience-container > div {
+    /* display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
-    grid-auto-rows: minmax(100px, 2);
-    /* background-color: aqua; */
+    grid-auto-rows: minmax(100px, 2); */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
-  .experience-container > .internships {
-    grid-column: 2/3;
+  .internships {
+    /* grid-column: 2/3;
     grid-row: 1/1;
-    place-self: center;
+    place-self: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin: 10px 100px; */
   }
 
-  .experience-container > .illustration {
-    grid-column: 1;
+  .experience-container .illustration {
+    /* grid-column: 1;
     grid-row: 1/1;
-    place-self: center;
+    place-self: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
   }
 
   .internships > div {
     margin: 40px 5px;
+    width: 100%;
   }
 
   .internships > div > h2 {
@@ -363,7 +393,10 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+    }
+
+    .diplomas-container .illustration {
+      display: none;
     }
 
     .diplomas > div > h2 { 
@@ -373,11 +406,15 @@ body {
     .experience-container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      /* justify-content: center; */
+      /* align-items: center; */
     }
 
-    .illustration {
+    .internships {
+      margin: 10px 0px;
+    }
+
+    .experience-container .illustration {
       display: none;
     }
 
@@ -386,7 +423,11 @@ body {
     }
 
     .languages > .new-card {
-      width: 80%;
+      width: 100%;
+    }
+
+    .languages > .new-card > img {
+      width: 50%;
     }
   }
 
