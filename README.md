@@ -8,4 +8,4 @@ Hope my portfolio will catch your eyes because I maybe worth it 😉
 
 - v1 : Publishing website with most important information
 - v2 : Make a french version and add certificates, online courses
-- v3 : Add some animations and animated images and develop a more elaborate color palette
+- v3 : Add some animations and animated images and develop a more elaborate color palette with dark theme, redisposate elements
