@@ -1,5 +1,5 @@
 document.getElementById("form").addEventListener("submit", function(e){
-  console.log("Form submit")
+  // console.log("Form submit")
   e.preventDefault();
   let data = new FormData(document.getElementById("form"));
   xml.open("POST", "post_mail.php");
@@ -9,28 +9,16 @@ document.getElementById("form").addEventListener("submit", function(e){
 
 var xml = new XMLHttpRequest();
 xml.onreadystatechange = function() {
-  var message = "";
-  // var divMsg = document.getElementById("divMsgForm");
   if( xml.readyState==4 && xml.status==200 ){
-      // message = "Votre message a bien été envoyé";
-      // for (let i = 0; i < document.getElementsByClassName("formElt").length; i++) {
-      //     document.getElementsByClassName("formElt")[i].value = "";
-      //     divMsg.style.backgroundColor = "#22C737";
-      //     divMsg.style.padding = "25px";
-      //     divMsg.style.marginBottom = "15px";
-      // }
-      console.log("Votre message a bien été envoyé")
+      // Success feedback & clear form
+      //clearForm();
+      alert('Email sent successfully !');
+      //window.location.href = "index.html";
   }
-  else if(xml.status!=200){
-      // message = "Erreur, veuillez réessayer"
-      // divMsg.style.backgroundColor = "#ff0033";
-      // divMsg.style.padding = "25px";
-      // divMsg.style.marginBottom = "15px";
-      console.log("Erreur, veuillez rééssayer")
+  else if(xml.status==404){
+      // Failure feedback
+      alert('Email cannot been sent. Please retry later.')
   }
-  
-  // divMsg.innerText = message;
-  // fadeOutEffect();
 
 };
 
@@ -99,4 +87,10 @@ function clearHighlightNavbar() {
   for (var i = 0; i < navbar.children.length; i++) {
     navbar.children[i].classList.remove("highlighted");
   }
+}
+
+function clearForm() {
+  document.getElementById('email').value = ""
+  document.getElementById('form-subject').value = ""
+  document.getElementById('form-message').value = ""
 }
