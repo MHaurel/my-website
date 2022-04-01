@@ -17,7 +17,7 @@ xml.onreadystatechange = function() {
   }
   else if(xml.status==404){
       // Failure feedback
-      alert('Email cannot been sent. Please retry later.')
+      //alert('Email cannot been sent. Please retry later.') It show when xml request is pending
   }
 
 };

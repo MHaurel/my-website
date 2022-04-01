@@ -24,6 +24,7 @@ body {
   
   #navbar a:hover {
     background-color: #d6d5d5;
+    /* border-bottom: #d6d5d5 solid 1px; */
     color: black;
   }
   
@@ -520,19 +521,19 @@ body {
   }
 
   .new-card .green {
-    background-color: #04AA6D;
+    background-color: #90C3C8;
   }
 
   .new-card .yellow {
-    background-color: #c9c603;
+    background-color: #759FBC;
   }
 
   .new-card .orange {
-    background-color: #c98303;
+    background-color: #D4AFCD;
   }
 
   .new-card .red {
-    background-color: #c93103;
+    background-color: #9BC995;
   }
 
   .new-card > p > span {
@@ -570,15 +571,19 @@ body {
   }
 
   .project-tags > .ai {
-    background-color: #d4a60e;
+    background-color: #90C3C8;
   }
 
   .project-tags > .programming {
-    background-color: #41A056;
+    background-color: #759FBC;
   }
 
   .project-tags > .project-management {
-    background-color: #d1343c;
+    background-color: #D4AFCD;
+  }
+
+  .project-tags > .human-knowledge {
+    background-color: #9BC995;
   }
 
   @media screen and (max-width: 750px) {

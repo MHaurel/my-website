@@ -24,6 +24,11 @@
     $headers .= 'From: '.$fromEmail.'<'.$fromEmail.'>' . "\r\n".'Reply-To: '.$fromEmail."\r\n" . 'X-Mailer: PHP/' . phpversion();
     $message = '<!doctype html>
 			<html lang="en">
+            <style>
+                .container {
+                    font-weight: bold;
+                }
+            </style>
 			<head>
 				<meta charset="UTF-8">
 				<meta name="viewport"
