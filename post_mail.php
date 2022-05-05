@@ -1,10 +1,21 @@
-<?php 
+<?php
 
-if (isset($_POST['sendMailBtn'])) {
-    $fromEmail = $_POST['fromEmail'];
+    if(isset($_POST['fromEmail'])){
+        $fromEmail = $_POST['fromEmail'];
+    }
+
+    if(isset($_POST['subject'])){
+        $subjectName = $_POST['subject'];
+    }
+
+    if(isset($_POST['message'])){
+        $message = $_POST['message'];
+    }
+
+    // $fromEmail = $_POST['fromEmail'];
     $toEmail = "maxime.haurel0@gmail.com";
-    $subjectName = "New contact mail from website";
-    $message = $_POST['message'];
+    // $subjectName = "New contact mail from website";
+    // $message = $_POST['message'];
 
     $to = $toEmail;
     $subject = $subjectName;
@@ -13,6 +24,11 @@ if (isset($_POST['sendMailBtn'])) {
     $headers .= 'From: '.$fromEmail.'<'.$fromEmail.'>' . "\r\n".'Reply-To: '.$fromEmail."\r\n" . 'X-Mailer: PHP/' . phpversion();
     $message = '<!doctype html>
 			<html lang="en">
+            <style>
+                .container {
+                    font-weight: bold;
+                }
+            </style>
 			<head>
 				<meta charset="UTF-8">
 				<meta name="viewport"
@@ -31,7 +47,7 @@ if (isset($_POST['sendMailBtn'])) {
 			</html>';
     $result = @mail($to, $subject, $message, $headers);
 
-    echo '<script>alert("Email sent successfully !")</script>';
+    // echo '<script>alert("Email sent successfully !")</script>';
     // echo '<script>window.location.href="index.html";</script>';
 
-}
+?>

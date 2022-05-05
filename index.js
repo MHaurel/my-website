@@ -1,8 +1,28 @@
-$(".button-send-mail").click(() => {
-  alert("This functionality is currently not working. Please send me a mail on the link below.")
+document.getElementById("form").addEventListener("submit", function(e){
+  // console.log("Form submit")
+  e.preventDefault();
+  let data = new FormData(document.getElementById("form"));
+  xml.open("POST", "post_mail.php");
+  xml.send(data);
 })
 
-// https://www.emailjs.com/
+var xml = new XMLHttpRequest();
+xml.onreadystatechange = function() {
+  if( xml.readyState==4 && xml.status==200 ){
+      // Success feedback & clear form
+      //clearForm();
+
+      // alert('Email sent successfully !');
+      successAlert()
+
+      //window.location.href = "index.html";
+  }
+  else if(xml.status==404){
+      // Failure feedback
+      //alert('Email cannot been sent. Please retry later.') It show when xml request is pending
+  }
+
+};
 
 $(".other-contact > span").click(() => {
   var mailTo = "maxime.haurel0@gmail.com";
@@ -69,4 +89,19 @@ function clearHighlightNavbar() {
   for (var i = 0; i < navbar.children.length; i++) {
     navbar.children[i].classList.remove("highlighted");
   }
+}
+
+function clearForm() {
+  document.getElementById('email').value = ""
+  document.getElementById('form-subject').value = ""
+  document.getElementById('form-message').value = ""
+}
+
+function successAlert() {
+  Swal.fire({
+    title: 'Success',
+    text: 'Mail has been successfully sent !',
+    icon: 'success',
+    confirmButtonText: 'Nice !'
+  })
 }
