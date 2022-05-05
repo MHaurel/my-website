@@ -6,13 +6,15 @@ document.getElementById("form").addEventListener("submit", function(e){
   xml.send(data);
 })
 
-
 var xml = new XMLHttpRequest();
 xml.onreadystatechange = function() {
   if( xml.readyState==4 && xml.status==200 ){
       // Success feedback & clear form
       //clearForm();
-      alert('Email sent successfully !');
+
+      // alert('Email sent successfully !');
+      successAlert()
+
       //window.location.href = "index.html";
   }
   else if(xml.status==404){
@@ -93,4 +95,13 @@ function clearForm() {
   document.getElementById('email').value = ""
   document.getElementById('form-subject').value = ""
   document.getElementById('form-message').value = ""
+}
+
+function successAlert() {
+  Swal.fire({
+    title: 'Success',
+    text: 'Mail has been successfully sent !',
+    icon: 'success',
+    confirmButtonText: 'Nice !'
+  })
 }
