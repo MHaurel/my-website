@@ -1,11 +1,8 @@
-document.getElementById("form").addEventListener("submit", function(e){
-  // console.log("Form submit")
-  e.preventDefault();
-  let data = new FormData(document.getElementById("form"));
-  xml.open("POST", "post_mail.php");
-  xml.send(data);
+$(".button-send-mail").click(() => {
+  alert("This functionality is currently not working. Please send me a mail on the link below.")
 })
 
+<<<<<<< HEAD
 
 var xml = new XMLHttpRequest();
 xml.onreadystatechange = function() {
@@ -21,6 +18,9 @@ xml.onreadystatechange = function() {
   }
 
 };
+=======
+// https://www.emailjs.com/
+>>>>>>> parent of 06a01e4 (Merge branch 'v1')
 
 $(".other-contact > span").click(() => {
   var mailTo = "maxime.haurel0@gmail.com";
@@ -87,10 +87,13 @@ function clearHighlightNavbar() {
   for (var i = 0; i < navbar.children.length; i++) {
     navbar.children[i].classList.remove("highlighted");
   }
+<<<<<<< HEAD
 }
 
 function clearForm() {
   document.getElementById('email').value = ""
   document.getElementById('form-subject').value = ""
   document.getElementById('form-message').value = ""
+=======
+>>>>>>> parent of 06a01e4 (Merge branch 'v1')
 }
