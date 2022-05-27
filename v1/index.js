@@ -2,8 +2,8 @@ var xml = new XMLHttpRequest();
 xml.onreadystatechange = function() {
   if( xml.readyState==4 && xml.status==200 ){
       // Success feedback & clear form
-      //clearForm();
-      alert('Email sent successfully !');
+      clearForm();
+      // alert('Email sent successfully !');
       //window.location.href = "index.html";
   }
   else if(xml.status==404){

@@ -1,253 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Maxime Haurel</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Maxime Haurel</title>
 </head>
 <body>
+    
+    <main>
 
-    <div id="index" class="bg-white dark:bg-slate-100 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-        <div class="profile-container">
-            <img class="w-48 h-48 rounded-full" src="./resources/img/myself-2.jpg">
-            <div class="text-info">
-                <p class="text-5xl font-medium">
-                    Maxime HAUREL
-                </p>
-                <p class="text-3xl font-light">
-                    AI Student at IDMC, Université de Lorraine
-                </p>
-            </div>
-        </div>
-        <div>
-            <a href="https://www.linkedin.com/in/maxime-haurel-326133182/" target="_blank"><img class="w-16 h-16" src="./resources/img/linkedin-logo.png" alt="My LinkedIn profile page"></a>
-        </div>
-    </div>
-
-    <div id="navbar">
-        <!-- block py-2 pr-4 pl-3 text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white -->
-        <a href="#index" aria-current="page">PROFILE</a></li>
-        <a href="#education">EDUCATION</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#contact">CONTACT</a>
-    </div>
-
-    <div id="content" class="content-container">
-        <div class="presentation">
-            <h2>Actively looking for an apprenticeship in AI/AR for Cognitive Sciences or Natural Language Processing.</h2>
-            <h3>Interested on Artificial Intelligence and its applications, I'm learning AI to help science growing and solve concrete world related problems.</h3>
-        </div>
-        <div class="hobbies-container">
-            <h1>HOBBIES</h1>
-            <div class="astro">
-                <h2>Astronomy/Cosmology</h2>
-                <p>I have a deep interest about the universe and how all started.</p>
-                <p>"What are we ?" and "How are we ?" might be the most intriguous questions I ever asked myself.</p>
-                <p>And this is by wondering this way that I am able to take an interest on some topics and solve problems.</p>
-            </div>
-            <div class="sport">
-                <h2>Sport</h2>
-                <p>I used to play Football & Badminton in club for 12 years.</p>
-                <p>This is a big part of my life and it trained me to be able to keep focusing even in hard times.</p>
-            </div>
-            <div class="trips">
-                <h2>Trips</h2>
-                <p>I love to take trips and use my languages skills to discover new places and cultures.</p>
-                <p>Usually shy, trips helped me open myself to people and customs.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="education" class="education-container">
-        <div class="skills-container">
-            <h1>SKILLS</h1>
-            <ul class="skills">
-                <div>
-                    <li class="new-card">
-                        <div>
-                            <h2>Artificial Intelligence</h2>
-                            <!-- <span title="Mastered" class="pad green"></span> -->
-                        </div>
-                        <p>Knowledge-based systems</p>
-                        <h3>Machine Learning:</h3>
-                        <ul>
-                            <li>  - Random Forest</li>
-                            <li>  - Linear Regression</li>
-                            <li>  - Clustering</li>
-                        </ul>
-                        <h3>NLP:</h3>
-                        <ul>
-                            <li>  - Word Embeddings (Word2Vec)</li>
-                        </ul>
-                        <p>NLTK, pandas, scikit-learn, pyTorch</p>
-                        <p>Neural Networks</p>
-                    </li>
-                    <li class="new-card">
-                        <div>
-                            <h2>Programming</h2>
-                            <!-- <span title="Learning" class="pad yellow"></span> -->
-                        </div>
-                        <p>Python</p>
-                        <p>SQL, MongoDB</p>
-                        <p>Java, JavaFX</p>
-                        <p>PHP, Laravel</p>
-                        <p>HTML/CSS, Javascript</p>
-                        <p>Anaconda, Google Colab</p>
-                        <p>Software Engineering</p>
-                    </li>
-                    <li class="new-card">
-                        <div>
-                            <h2>Project Management</h2>
-                            <!-- <span title="Learning" class="pad yellow"></span> -->
-                        </div>
-                        <p>Collecting needs</p>
-                        <p>Digital innovation</p>
-                        <p>Business analysis</p>
-                        <p>Agile methods</p>
-                        <p>Risks analysis</p>
-                        <p>Sketching prototype (Figma, Adobe XD)</p>
-                    </li>
-                </div>
-            </ul>
-        </div>
-
-        <div class="diplomas-container">
-            <div class="diplomas">
-                <h1>DIPLOMAS</h1>
-                <div class="diploma-msc">
-                    <h2>MSc. Cognitive Sciences specialized in Cognitive Engineering, Interaction and Artificial Intelligence</h2>
-                    <p>2022 - 2024, IDMC - University of Lorraine, Nancy</p>
-                </div>
-
-                <div class="diploma-bsc">
-                    <h2>BSc. Mathematics & Computer Science applied to Human and Social Sciences 
-                        specialized in Cognitive Sciences</h2>
-                    <p>2020 - 2022, IDMC - University of Lorraine, Nancy</p>
-                </div>
-
-                <div class="diploma-btec">
-                    <h2>BTEC Higher National Diploma IT network and system administration</h2>
-                    <p>2018 - 2020, Frédéric Chopin High School, Nancy</p>
+        <div class="profile" id="profile">
+            <div class="myself">
+                <img src="./resources/img/myself-2.jpg" alt="Profile pic">
+                <div class="information">
+                    <h1 class="name">Maxime HAUREL</h1>
+                    <h3 class="position">AI Student</h2>
+                    <h5 class="place">IDMC, Université de Lorraine</h3>
+                    <h5 class="mail">maxime.haurel0@gmail.com</h4>
                 </div>
             </div>
-            <div class="illustration">
-                <img src="./resources/img/téléchargement.png" alt="Diplomas illustration">
+
+            <div class="interests">
+                <h4>Interests:</h3>
+                <ul>
+                    <li>Artificial Intelligence and its applications</li>
+                    <li>Smart Cities</li>
+                    <li>Reinforcement Learning</li>
+                    <li>Astronomy and Cosmology</li>
+                </ul>
+            </div>
+
+            <div class="links">
+                <a href="https://github.com/MHaurel" target="_blank"><img src="./resources/img/github.png" alt="Github image link"></a>
+                <a href="https://www.linkedin.com/in/maxime-haurel-326133182/" target="_blank"><img src="./resources/img/linkedin.png" alt="LinkedIn image link"></a>
+            </div>
+
+            <div class="resume button">
+                <a href="./resources/CV-ver2-english-sc.pdf" download="maxime_haurel_resume.pdf">
+                    <p>My resume</p>
+                    <img src="./resources/img/download.png" alt="Download resume button image">
+                </a>
             </div>
         </div>
 
-        <div class="experience-container">
-            <div class="illustration">
-                <img src="./resources/img/téléchargement.png" alt="Experience illustration">
+        <div class="skills" id="skills">
+            <h2>SKILLS</h4>
+            <div class="ai">
+                <h4>Artificial Intelligence</h4>
+                <ul>
+                    <li>Knowledge-based systems</li>
+                    <li>Machine Learning</li>
+                    <li>Natural Language Processing</li>
+                    <li>Neural Networks</li>
+                    <li>Data Science packages:</li>
+                    <ul>
+                        <li>NLTK, pandas, numpy, Tensorflow, Keras, PyTorch</li>
+                    </ul>
+                </ul>
             </div>
-            <div class="internships">
-                <h1>EXPERIENCE</h1>
-                <div class="internship-bsc">
-                    <h2>Research Intern</h2>
-                    <p>ANN layers extraction and alignment on knowledge-based models</p>
-                    <p class="location">May - July 2022, Loria, Villers-lès-Nancy</p>
+
+            <div class="programming">
+                <h4>Programming</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL, NoSQL</li>
+                    <li>Java, JavaFX</li>
+                    <li>PHP, HTML/CSS, Javascript</li>
+                    <li>Data Science tools (Anaconda, Google Colab)</li>
+                    <li>Software Engineering</li>
+                </ul>
+            </div>
+
+            <div class="project-management">
+                <h4>Project Management</h4>
+                <ul>
+                    <li>Collecting Needs</li>
+                    <li>Digital Innovation</li>
+                    <li>Business Analysis</li>
+                    <li>Agile Methods</li>
+                    <li>Risks Analysis</li>
+                </ul>
+            </div>
+
+            <div class="human">
+                <h4>Human Knowledge & Modelisation</h4>
+                <ul>
+                    <li>Modelling in Psychology</li>
+                    <li>Collective Phenomena in Biology</li>
+                    <li>Behavioral Analysis</li>
+                    <li>Experimental Psychology Methods</li>
+                    <li>Intelligent & Collective Agents</li>
+                    <li>Ergonomics & UX</li>
+                    <li>Neuroscience</li>
+                </ul>
+            </div>
+
+            <div class="languages">
+                <h4>Languages</h4>
+                <ul>
+                    <li>English - TOEIC 895</li>
+                    <li>French  - Native</li>
+                    <li>Spanish - CLES B1</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <h2>PROJECTS</h2>
+            <div class="list">
+                <div class="project-card card">
+                    <h4>Nancy Smart City</h4>
+                    <h5>Playing with public data of the city of Nancy, France to see in what the city could be smarter.</h5>
+                    <a href="https://github.com/MHaurel/nancy_smart_city" target="_blank">Look at the project</a>
                 </div>
 
-                <div class="internship-btec-2">
-                    <h2>IT Network Administration Intern</h2>
-                    <p>Implementation and maintenance of an IT network infrastructure</p>
-                    <p class="location">January - February 2020, City Hall, Epinal</p>
+                <div class="project-card card">
+                    <h4>2584 Java Game</h4>
+                    <h5>Adapting 2048 famous game to a Fibonacci's suite version in Java.</h5>
+                    <a href="https://github.com/MHaurel/G3-Jeu2584-2021-Dekkers-Abid-Braux-Haurel" target="_blank">Look at the project</a>
                 </div>
 
-                <div class="internship-btec-1">
-                    <h2>IT System Administration Intern</h2>
-                    <p>Implementation and maintenance of an IT system infrastructure</p>
-                    <p class="location">May - June 2019, Notre-Dame St-Joseph High School, Epinal</p>
+                <div class="project-card card">
+                    <h4>Cron</h4>
+                    <h5>Interacting with APIs to display science news.</h5>
+                    <a href="https://github.com/MHaurel/Cron" target="_blank">Look at the project</a>
                 </div>
             </div>
         </div>
 
-        <div class="languages-container">
-            <h1>LANGUAGES</h1>
-            <ul class="languages">
-                <div class="new-card">
-                    <img src="./resources/img/france.png" alt="France flag">
-                    <li>French - Native</li>
+
+        <div class="education" id="education">
+            <h2>EDUCATION</h2>
+            <div class="list">
+                <div class="education-card card">
+                    <h4>MSc. Cognitive Sciences specialized in Cognitive Engineering, Interaction and Artificial Intelligence</h4>
+                    <h6>2022-2024, IDMC - Université de Lorraine, Nancy, France</h6>
                 </div>
 
-                <div class="new-card">
-                    <img src="./resources/img/united-kingdom.png" alt="UK flag">
-                    <li>English - B2</li>
+                <div class="education-card card">
+                    <h4>BSc. Math and Computer Science applied to Human and Social Sciences specialized in Cognitive Sciences</h4>
+                    <h6>2020-2022, IDMC - Université de Lorraine, Nancy, France</h6>
                 </div>
 
-                <div class="new-card">
-                    <img src="./resources/img/spain.png" alt="Spain flag">
-                    <li>Spanish - B1</li>
+                <div class="education-card card">
+                    <h4>BTEC Higher National Diploma IT Networks and System Administration</h4>
+                    <h6>2018-2020, Frédéric Chopin High School, Nancy, France</h6>
                 </div>
-            </ul>
+            </div>
         </div>
-    </div>
 
-    <div id="projects" class="projects-container">
-        <h1>PROJECTS</h1>
-        <div class="projects">
-            <div class="new-card">
-                <h2>Pet's Groove</h2>
-                <p>Managing bachelor's project of a mobile application</p>
-                <div>
-                    <a class="discover-project-button" href="#projects" target="_blank">Discover it</a>
-                    <div class="project-tags">
-                        <span class="project-management">Collecting needs</span>
-                        <span class="project-management">Digital innovation</span>
-                        <span class="project-management">Agile methods</span>
-                        <span class="project-management">Sketching prototype</span>
-                    </div>
-                </div>
+        <div class="experience" id="experience">
+            <h2>EXPERIENCE</h2>
+            <div class="experience-card card">
+                <h4>Research Intern</h4>
+                <h5>Data extraction from Artificial Neural Networks and alignment on knowledge-based models</h5>
+                <h6>May-July 2022, LORIA, Villers-lès-Nancy, France</h6>
             </div>
-
-            <div class="new-card">
-                <h2>2584 Java Game</h2>
-                <p>Adapting 2048 famous game to a Fibonacci's suite version in Java.</p>
-                <div>
-                    <a class="discover-project-button" href="https://github.com/MHaurel/G3-Jeu2584-2021-Dekkers-Abid-Braux-Haurel" target="_blank">Discover it</a>
-                    <div class="project-tags">
-                        <span class="programming">JavaFX</span>
-                        <span class="programming">Software Engineering</span>
-                        <span class="programming">SQL</span>
-                        <span class="project-management">Agile methods</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="new-card">
-                <h2>Cron</h2>
-                <p>Interacting with APIs to display science news</p>
-                <div>
-                    <a class="discover-project-button" href="https://github.com/MHaurel/Cron" target="_blank">Discover it</a>
-                    <div class="project-tags">
-                        <span class="programming">Python</span>
-                    </div>
-                </div>
-            </div>
-
-
-            
         </div>
-        <div class="github-button-container">
-            <p>Want to see other projects ?</p>
-            <a class="button" href="https://github.com/MHaurel" target="_blank">My GitHub profile page</a>
-        </div>
-    </div>
 
-    <div id="contact" class="contact-container">
-        <h1>CONTACT</h1>
-        <div class="contact">
-            <div class="contact-image">
-                <img src="./resources/img/start-up.png" alt="Contact Image">
-            </div>
+        <div class="contact" id="contact">
+            <h2>CONTACT</h2>
+            <h4>Fill in information to contact me</h4>
             <div class="contact-form">
-                <h2>Fill in information to contact me</h2>
-                <form action="" method=""> 
+                <form id="form"> 
                     <label for="email">Your Email</label>
                     <input placeholder="youremail@smthng.com" type="email" name="fromEmail" id="email" value="">
                     <label for="subject">Subject</label>
@@ -255,17 +175,19 @@
                     <label for="text">Content</label>
                     <textarea placeholder="Message" name="message" id="form-message" cols="30" rows="5"></textarea>
                     <div>
-                        <button class="button-send-mail" type="submit" value="Send" name="sendMailBtn">Send</button>
+                        <div class="send-mail button">
+                            <button class="button-send-mail" type="submit" value="Send" name="sendMailBtn">Send</button>
+                            <img src="./resources/img/send.png" alt="Send mail button image">
+                        </div>
                         <label class="other-contact">Or contact me at <span>maxime.haurel0@gmail.com</span></label>
                     </div>
                 </form>
             </div>
         </div>
-        
-    </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="index.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 </html>
