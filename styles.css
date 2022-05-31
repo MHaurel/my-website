@@ -244,6 +244,15 @@ h6 {
     height: 24px;
 }
 
+.certifications-link > a {
+    text-decoration: underline;
+    color: black;
+}
+
+.certifications-link > a:hover {
+    cursor: pointer;
+}
+
 .projects .list {
     display: flex;
     flex-direction: column;
